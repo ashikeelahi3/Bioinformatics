@@ -21,7 +21,7 @@ for(i in 1:n_sim){
   e = rnorm(n, 0, sigma)
   Y = beta_0 + beta_1 * X + e
   
-  coef = coefficients(lm(Y ~ X))
+  coef = coefficients(lm(Y ~ X ))
   b0[i] = coef[1]
   b1[i] = coef[2]
 
